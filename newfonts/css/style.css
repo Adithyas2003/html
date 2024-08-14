@@ -80,7 +80,6 @@ button{
     padding: 20px;
     border:none;
     position:absolute;
-    /* bottom: 0; */
     top: 50%;
     left: 80%;
     transform: translate(-50%,-50%);

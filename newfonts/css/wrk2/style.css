@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0; 
+}
+
+.container{
+    background-image: url("../wrk2/image/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.avif");
+    height: 100vh;
+    background-repeat: no repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.box{
+    position:absolute;
+    left:50%;
+    top: 50%;
+}
