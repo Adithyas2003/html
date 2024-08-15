@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Grey+Qo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+    }
+/*parent*/  
+
+.parent{
+    
+    background-color:pink;
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    min-height: 100vh;
+    
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+
+    .parent>div{
+    
+    width: 200px;
+    
+    height: 300px;
+    
+    background-color:palevioletred;
+    
+    border: 1px solid ☐ black;
+    
+    margin: 20px;
+    
+    }
+    
+    .image{
+    
+    width: 100%;
+    
+    height: 70%;
+    
+    }
+    
+    .content{
+    
+    height: 30%;
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    }
+.content>button{
+    
+        border: none;
+        background-color: brown;
+        color: aliceblue;
+        
+    }
+    .content>h6{
+        color: brown;
+    }
+    
+/*-------------------------------*/    
+    
+/*container*/
+
+.container{
+        width: 100vw;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+    }
+    .container>button{
+        border: none;
+        background-color: brown;
+        color: aliceblue;
+        padding: 10px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+    }
+    .container>h1{
+        position: absolute;
+        left: 40%;
+        top: 40%;
+        color: brown;
+        border-color:antiquewhite ;
+        border-width:thick;
+        font-family: "Bodoni Moda SC", serif;
+        
+    }
+    img{
+    
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        
+        }
+    .ds {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            
+        }
+        
+    .ds > h1 {
+            color: brown;
+            font-family: "Bodoni Moda SC", serif;
+        }
+        
+        
+/*------------------------*/
+
+/*navigation bar*/
+.nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color:pink;
+    color: brown;
+    /* position: sticky; */
+    top: 0; 
+    z-index: 1000; 
+    
+}
+
+        
+        .left{
+        font-family: "Bodoni Moda SC", serif;
+        display: flex;
+        
+        }
+        
+    .left>h4{
+        
+        margin-right: 20px;
+    }
+
+    .right{
+        font-family: "Bodoni Moda SC", serif;
+    }
+   /*-------------------------
