@@ -1,0 +1,14 @@
+/* .parent{
+    display:flex;
+    overflow-y: hidden;
+}
+.parent ::-webkit-scrollbar {
+   display: none;
+}
+img{
+    width: 300px;
+    height: 300px;
+    margin:10px;
+} */
+
+
