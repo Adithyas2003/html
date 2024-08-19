@@ -46,20 +46,20 @@
 
     hr{
         padding:0;
-        color:cadetblue;
+        color:white;
     }
     
-    .limg{
+    .leftimg{
         display:flex
     }
 
-    .ltext{
+    .lefttext{
         flex:1;
         margin: 20px;;
         
     }
 
-    .rtext{
+    .righttext{
         flex: 1;
         /* margin: 20px; */
         /* padding: 20px; */
@@ -73,13 +73,20 @@
 
     }
     h3{
-        padding:20px
+        padding:20px;
+        color: white;
     }
     h5{
         padding:10px;
+        font-family: "DM Serif Text", serif;
+        font-size: larger;
+        
     }
     .p1{
+        font-family: "Assistant", sans-serif;
         padding:20px;
+        font-size: larger;
+        color: grey;
     }
     .p{
         padding:20px;
@@ -91,18 +98,26 @@
         padding:10px;
         margin:20px;
     }
-    .second{
+    .sub{
         display:flex
     }
-    .sec1{
+    .sub1{
         display:flex;
         flex:1;
         padding:10px;
         /* background-color: aqua; */
+        color:black;
     }
     .text11{
         padding:10px;
+        /* color: brown; */
     }
     .p4{
         padding:10px;
+        font-family: "Assistant", sans-serif;
+        font-size: larger;
+        color: grey;
     }
+   .text11>h3{
+    color: brown;
+   }
