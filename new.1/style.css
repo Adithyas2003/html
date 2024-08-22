@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+}
+button{
+    background-color: brown;
+    padding: 20px 30px;
+    border-radius: 10px;
+    top: 0;
+}
+button>:focus{
+    padding: auto;
+    background-color: aqua;
+}
