@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: rgb(204, 191, 191);
+    padding: 0 2%; /* Add padding for spacing */
+    display: flex;
+    align-items: center; /* Center content vertically */
+}
+
+img {
+    width: 60px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navleft {
+    display: flex;
+    align-items: center;
+}
+
+.navleft ul {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    list-style: none;
+}
+
+.navleft ul li {
+    margin: 0 10px;
+}
+
+.navleft a {
+    text-decoration: none; /* Remove underlines from links */
+    color: inherit; /* Inherit text color from parent */
+}
