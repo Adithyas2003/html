@@ -95,65 +95,41 @@ img {
     height: 50px; /* Adjust as needed for the logo */
 }
 
-.banner img {
-    width: 100%; /* Make banner image responsive */
-    height: auto; /* Maintain aspect ratio */
-   
+ /* section1 */
+ .body2{
+    background-color: rgb(170, 216, 230);
+    height:400px;
+    display: flex;
 }
-.banner {
-    position: relative;
-    text-align: center;
-    color: white;
+.body2img{
+    width:100%;
+    height:100%;
+    object-fit:scale-down;    
 }
+.body21{
+    flex:1;
 
-.banner img {
-    width: 600px;
-    height: 500px; /* Adjust to maintain aspect ratio */
-    display: block;
 }
-
-.banner h1 {
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5rem;
-    margin: 0;
-    padding: 0 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
-    border-radius: 8px;
+.body22{
+    flex:1;
+    
 }
-
-.banner button {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 2rem;
-    background-color: #f7f3f1; /* Customize button color */
+.body23{
+    flex: 1;
     color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 8px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top:150px;
+    font-size: 30px;
+}
+.body2buttons1{
+    margin: 10px;
+    width:100px;
+    height: 60px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(4, 4, 4);
+    border:solid black;
+    font-family: "Roboto Condensed", sans-serif;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-.banner button:hover {
-    background-color: #e55b00; /* Darker shade on hover */
-}
-
-.banner button:nth-of-type(1) {
-    top: 55%;
-    justify-content: center;
-}
-
-.banner button:nth-of-type(2) {
-    top: 65%;
-    justify-content: center;
-}
-
-.banner button:nth-of-type(3) {
-    top: 75%;
-    justify-content: center;
 }

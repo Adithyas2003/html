@@ -1,0 +1,34 @@
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.box::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(to right,rgba(0,0,0,0.5),transparent);
+
+}
+.imagecontainer{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.imagecontainer img{
+    width: 100vw;
+    height: 100vh;
+}
