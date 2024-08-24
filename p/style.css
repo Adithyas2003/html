@@ -1,135 +1,201 @@
-* {
+/* Basic reset and font setup */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
+/* Header and Navigation Styles */
 header {
-    width: 100%;
-    height: 70px;
-    background: rgb(14, 13, 13);
-    padding: 0 2%; /* Add padding for spacing */
-    display: flex;
-    align-items: center; /* Center content vertically */
-}
-
-img {
-    width: 60px;
+    background-color: #333;
+    color: white;
 }
 
 nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-.navleft {
-    display: flex;
-    align-items: center;
+.navleft img {
+    height: 50px;
 }
 
 .navleft ul {
-    display: flex;
-    align-items: center; /* Center items vertically */
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
 }
 
-.navleft ul li {
-    margin: 0 10px;
+.navleft li {
+    display: inline;
 }
 
 .navleft a {
-    text-decoration: none; /* Remove underlines from links */
-    color:white; /* Change color as needed */
-    font-weight: bold; /* Add styling to links */
+    color: white;
+    text-decoration: none;
 }
-
-.navleft a:hover {
-    color: rgb(207, 185, 185); /* Change color on hover */
-}
-
 
 .navright {
     display: flex;
     align-items: center;
-    gap: 15px; /* Space between items */
+    gap: 15px;
 }
 
 .searchbar {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 5px 10px;
-    background: #fff;
+    gap: 5px;
 }
 
 .searchbar input {
-    border: none;
-    outline: none;
     padding: 5px;
-    margin-left: 8px;
 }
 
-.material-icons-outlined {
-    font-size: 24px;
-    color:rgb(5, 165, 53); /* Change color as needed */
-}
-
-.searchbar input::placeholder {
-    color:rgb(240, 229, 229);
-}
-
-.navright div {
-    display: flex;
-    align-items: center;
-}
-img {
-    max-width: 100%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
-   
-}
-
-.navleft img {
-    height: 50px; /* Adjust as needed for the logo */
-}
-
- /* section1 */
- .body2{
-    background-color: rgb(170, 216, 230);
-    height:400px;
-    display: flex;
-}
-.body2img{
-    width:100%;
-    height:100%;
-    object-fit:scale-down;    
-}
-.body21{
-    flex:1;
-
-}
-.body22{
-    flex:1;
-    
-}
-.body23{
-    flex: 1;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
-    margin-top:150px;
-    font-size: 30px;
-}
-.body2buttons1{
-    margin: 10px;
-    width:100px;
-    height: 60px;
-    color:rgb(255, 255, 255);
-    background-color: rgb(4, 4, 4);
-    border:solid black;
-    font-family: "Roboto Condensed", sans-serif;
+.icons svg {
+    fill: white;
     cursor: pointer;
-
 }
+
+/* Main Promotional Section */
+.main1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.main1 .m1t1 {
+    margin: 0;
+}
+
+.main1 .m1t2 {
+    margin: 10px 0 0;
+}
+
+/* Section Styles */
+.body2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.body21, .body22, .body23 {
+    flex: 1;
+}
+
+.body2img {
+    width: 100%;
+    height: auto;
+}
+
+.body2buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.body2buttons1 {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Section 2 */
+.section2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #eee;
+}
+
+.section21, .section22 {
+    text-align: center;
+    flex: 1;
+}
+
+.section2img {
+    width: 100%;
+    height: auto;
+}
+
+.section2but {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Section 3 */
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sec31, .sec32 {
+    flex: 1;
+}
+
+.sec3img {
+    width: 100%;
+    height: auto;
+}
+
+.sec3but {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Product Details Container */
+.container {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.details {
+    padding: 15px;
+}
+
+.details h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.details p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
