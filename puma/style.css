@@ -103,7 +103,7 @@
   /* section1 */
   .child1 {
     background-color: rgb(5, 6, 7);
-    height: 400px;
+    height: 1000px;
     display: flex;
     position: relative;
     justify-content: end;
@@ -139,8 +139,7 @@
     color: white;
     border-color: black;
   }
-  /* Savings Section */
-.savings {
+  .savings {
     padding: 60px 50px;
     background-color: #f5f5f5;
     text-align: center;
@@ -153,7 +152,7 @@
   
   .categories {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
   }
   
@@ -172,6 +171,7 @@
     font-size: 18px;
     margin-top: 10px;
   }
+
   /* section2 */
   .section2 {
     margin-top: 10px;
