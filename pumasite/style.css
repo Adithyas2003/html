@@ -3,7 +3,7 @@
 }
 
 .nav1{
-    background-color: rgb(136, 121, 86);
+    background-color: rgb(48, 158, 131);
     padding: 10px 0px 10px 0px;
     display: flex;
     justify-content: center;
@@ -54,28 +54,45 @@
     align-items: center;
     gap: 20px;
 }
-
-.search-bar {
-    width: 35%;
-    padding: 6px 0px 6px;
-    color: white;
+.right {
+    margin: 20px;
+  }
+  .image1 {
+    margin-left: 20px;
+  }
+  
+  .sbutton {
     background-color: black;
-    border: 1px solid gray;
-    font-size: large;
-}
-
-.search-bar:focus{
-    border-color: white;
-}
-
-.icons {
-    display: flex;
-    gap: 15px;
+    width: 150px;
+    height: 40px;
     color: white;
-}
+    border-style: solid;
+    border-color: rgb(12, 4, 4);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    line-height: 1;
+    margin-left: 40px;
+    font-family: "Roboto Condensed", sans-serif;
+    transition: 0.5s;
+  }
+  .sbutton:hover{
+      color: black;
+      background-color: rgb(254, 254, 254);
+  }
+  
+  .search-icon {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+ 
 
 .nav3{
-    background-color: rgb(76, 76, 138);
+    background-color: rgb(189, 187, 72);
     padding: 15px;
     color: white;
     text-align: center;
@@ -588,6 +605,19 @@
 
 /* container10-------------------------------------------------------------- */
 
+.child01{
+    position: relative;
+}
+.child01 button{
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
 .child02{
     position: relative;
 }
@@ -625,6 +655,34 @@
     border: 0;
 }
 
+.child04{
+    position: relative;
+}
+.child04 button{
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+
+.child05{
+    position: relative;
+}
+.child05 button{
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
 
 .container11{
     width: 100%;
@@ -723,7 +781,7 @@
 
 /* ________________________________Footer Styles _______________________________*/
 .footer {
-    background-color: rgb(23, 23, 23);
+    background-color: black;
     color: #d6d6d6;
     padding: 40px 0;
     font-family: Arial, sans-serif;
