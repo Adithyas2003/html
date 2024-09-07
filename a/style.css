@@ -156,3 +156,38 @@ header {
 }
 
 
+
+.btn:hover {
+    background-color: #0056b3;  
+}
+
+/* Active state for buttons */
+.btn:active {
+    background-color: #004085; 
+}
+
+/* Disabled state for buttons */
+.btn:disabled {
+    background-color: #02101d;  
+    cursor: not-allowed;        
+    opacity: 0.65;            
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.trendcontainer {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    padding: 20px; /* Optional: add padding around the container */
+    background-color: #070231;
+}
+
+.trend {
+    display: flex; /* Align items in a row */
+    flex-wrap: wrap; /* Allow wrapping to next line if needed */
+    gap: 20px; /* Space between images */
+    align-items: center; /* Align items vertically in the center */
+}
