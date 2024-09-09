@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section h1{
+   margin-left: 20px;
+}
+.imagecontainer{
+    display: grid;   
+    grid-template-columns: repeat(3,1fr);           
+    overflow-x: auto;           
+    padding: 20px;              
+    column-gap: 2px;
+    row-gap: 80px; 
+    margin-left: 20px;
+
+}
+.conimg{
+    margin-right: 5px;
+}
+
+/* Wrapper for each image and button pair */
+.imagewrapper {
+    position: relative;         
+    /* flex: 0 0 auto;              */
+    width: 200px;               
+    height: 200px;
+     
+             
+}
+
+/* Style for images */
+.imagewrapper img {
+    width: 200px;                
+    height: 200px;               
+    object-fit: cover;         
+    display: block;  
+    border-radius: 20px; 
+   
+   
+}
+.imagewrapper h5{
+    color: red;
+}
+.imagewrapper p{
+    color: grey;
+}
+/* Style for buttons */
+.imagewrapper .btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(252, 250, 250, 0.5);
+    color: rgb(24, 20, 20);
+    /* border: none; */
+    padding: 10px;
+    cursor: pointer;
+}
+.btn {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(252, 250, 250, 0.8); 
+    color: rgb(24, 20, 20); 
+    border: none; 
+    /* padding: 10px 20px;  */
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-size: 10px; 
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Style for button icon */
+.btn-icon {
+    width: 20px; 
+    height: 20px;
+    margin-right: 8px; 
+}
+
+/* Hover effect for the button */
+.btn:hover {
+    background-color: rgba(252, 250, 250, 1); 
+    color: rgb(0, 0, 0);
+}
+
+/* Media query for tablets and small desktops */
+@media (max-width: 1024px) {
+    .imagecontainer {
+        grid-template-columns: repeat(2, 1fr); 
+        column-gap: 10px; 
+        row-gap: 20px;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .imagecontainer {
+        grid-template-columns: 1fr; 
+        column-gap: 10px; 
+        row-gap: 20px; 
+    }
+}
+
+/* Media query for very small mobile devices */
+@media (max-width: 480px) {
+    .imagecontainer {
+        padding: 10px; 
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 16px; 
+    }
+}
